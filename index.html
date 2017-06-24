@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <meta charset="utf-8">
+    <script  src="angular.min.js"></script>
+  
+    <script src="multiSelect.js"></script>
+
+    <script src="script.js"></script>
+    <style type="text/css">
+    
+  
+    </style>
+   </head>
+<body>
+
+  <div ng-app="myApp">
+  <div ng-controller="myController">
+
+     <div>
+        <span>选择用例</span>
+     <multi-select type="dishClass" data="dataSet" item-clicked="itemClicked($item,$type)" >
+     </multi-select> 
+     </div>
+  </div>
+</div>
+
+</body>
+
+</html>
